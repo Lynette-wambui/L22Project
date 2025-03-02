@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Methods in Javascript</title>
+</head>
+
+<body>
+    <center>
+        <h1 style="background-color: palevioletred;">Javascript Methods.</h1>
+        <script>
+            var str = "life is amazingly beautiful.";
+            document.write(str.toUpperCase());
+            document.write("<br>");
+            document.write(str.toLowerCase());
+            document.write("<br>");
+            document.write(str.startsWith("l"));
+            document.write("<br>");
+            document.write(Math.random());
+            document.write("<br>");
+            document.write(Math.floor(9.85));
+            document.write("<br>");
+            document.write(Math.ceil(9.85));
+        </script>
+
+        <h2 style="background-color: papayawhip;">Switch in JS</h2>
+        <p id="demo"></p>
+        <script>
+            var day;
+            switch (new Date().getDay()){
+                case 0:
+                     day="Sunday";
+                break;
+                 case 1:
+                     day = "Monday";
+                    break;
+                     case 2: 
+                         day = "Tuesday";
+                    break;
+                     case 3:
+                         day = "Wednesday";
+                    break;
+                     case 4:
+                         day = "Thursday";
+                    break;
+                     case 5:
+                         day = "Friday";
+                    break;
+                     case 6: 
+                     day = "Saturday";
+                    
+                     document.getElementById("demo").innerHTML = "Today is" + day;
+
+            }
+        </script>
+        <h2 style="background-color: plum;">Javascript For Loop.</h2>
+        <p id="demo"></p>
+        <script>
+            var fruits=["Mango", "Banana", "Apple", "Grape"];
+            var text="";
+            var i;
+            for (i=0; i<fruits.length; i++) {
+                text+=fruits[i] + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+
+        </script>
+
+    </center>
+</body>
+
+</html>
